@@ -14,5 +14,6 @@ jobs:
   public: true
   plan:
   - get: source-code-develop
+    trigger: true
   - task: buildArchAndTest
     file: source-code-develop/pipeline/gradle-build-test.yml
