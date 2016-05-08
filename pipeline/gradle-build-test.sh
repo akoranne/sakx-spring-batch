@@ -3,9 +3,9 @@
 set -e # fail fast
 set -x # print commands
 
-# 
-JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64";
-export JAVA_HOME;
+ 
+#JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64";
+#export JAVA_HOME;
 
 # The src from the 'develop' branch, injected by concourse
 srcdir=`pwd`/source-code-develop
