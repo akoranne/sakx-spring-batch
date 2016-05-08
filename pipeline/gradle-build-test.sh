@@ -15,4 +15,4 @@ echo "The java version is: `java -version` ";
 
 # do a clean build using gradle, and execute all tests.
 # if everything succeeds, assemble the archive (will be in the build/libs)
-${JAVA_HOME:-/usr/lib/jvm/java-8-openjdk-amd64/jre} ./gradlew clean build test assemble;
+./gradlew clean build test assemble;
