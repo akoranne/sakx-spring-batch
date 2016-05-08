@@ -3,6 +3,12 @@
 set -e # fail fast
 set -x # print commands
 
+# 
+JAVA_HOME=/opt/jdk1.8.0_92;
+PATH=${PATH}:${JAVA_HOME}/bin;
+export JAVA_HOME;
+export PATH;
+
 # The src from the 'develop' branch, injected by concourse
 srcdir=`pwd`/source-code-develop
 
