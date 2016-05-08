@@ -10,4 +10,4 @@ outputs:
 - name: generator-output
 
 run:
-  path: source-code-develop/pipeline/gradle-build-test.sh
+  path: ./source-code-develop/pipeline/gradle-build-test.sh
