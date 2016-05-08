@@ -10,7 +10,7 @@ resources:
     uri: https://github.com/akoranne/sakx-spring-batch.git
     branch: master
 jobs:
-- name: develop-build-and-test
+- name: develop-build-test
   public: true
   plan:
   - get: source-code-develop
