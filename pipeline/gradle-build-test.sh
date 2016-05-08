@@ -1,15 +1,17 @@
-#!/bin/sh
+#!/bin/bash
 
 set -e # fail fast
 set -x # print commands
 
-JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64";
-PATH=${PATH}:${JAVA_HOME}/bin;
-export JAVA_HOME;
-export PATH;
+
+export JAVA_HOME=${JAVA_HOME:-/usr/lib/jvm/java-8-openjdk-amd64}
+
+#	JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64";
+#	PATH=${PATH}:${JAVA_HOME}/bin;
+#	export JAVA_HOME;
+#	export PATH;
 
 # show the system settings
-echo $PATH;
 `set`;
 
 # The src from the 'develop' branch, injected by concourse
