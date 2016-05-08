@@ -1,0 +1,18 @@
+resources:
+- name: source-code-develop
+  type: git
+  source:
+    uri: https://github.com/akoranne/sakx-spring-batch.git
+    branch: develop
+- name: source-code-master
+  type: git
+  source:
+    uri: https://github.com/akoranne/sakx-spring-batch.git
+    branch: master
+jobs:
+- name: develop-build-and-test
+  public: true
+  plan:
+  - get: git-repo
+  - task: buildArchAndTest
+    file: source-code-develop/pipeline/gradle-build-test.yml

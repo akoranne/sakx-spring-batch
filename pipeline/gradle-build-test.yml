@@ -1,0 +1,13 @@
+---
+platform: linux
+
+image: docker:///concourse/concourse-ci
+
+inputs:
+- name: source-code-develop
+
+outputs:
+- name: generator-output
+
+run:
+  path: source-code/pipeline/tasks/gradle-build-test.sh
