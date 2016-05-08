@@ -7,7 +7,7 @@ set -x # print commands
 srcdir=`pwd`/source-code-develop
 
 # change to the src directory
-cd srcdir
+cd ${srcdir};
 
 # do a clean build using gradle, and execute all tests.
 # if everything succeeds, assemble the archive (will be in the build/libs)
